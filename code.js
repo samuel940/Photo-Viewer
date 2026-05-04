@@ -100,7 +100,7 @@ function prevPhoto(){
     }
 }
 
-// going to first and last photo available 
+
 const first = () => {
     if (current_photos.length == 0){
         let error = document.getElementById("Status");
@@ -127,7 +127,7 @@ const last = () => {
     }
 };
 
-// using fetch api to get images from files 
+
 async function loadJSON(){
     let file = document.getElementById("url").value;
     let curr = document.getElementById("currImage");
@@ -172,7 +172,6 @@ async function loadJSON(){
     }
 }
 
-// 1 second interval
 let idGlobal;
 const intervalInMilliseconds = 1000;
 
